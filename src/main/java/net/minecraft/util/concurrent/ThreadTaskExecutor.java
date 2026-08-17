@@ -1,6 +1,6 @@
 package net.minecraft.util.concurrent;
 
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import org.apache.logging.log4j.LogManager;

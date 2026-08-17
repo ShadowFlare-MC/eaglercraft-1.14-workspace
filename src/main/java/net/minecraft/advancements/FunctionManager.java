@@ -10,7 +10,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 import java.util.concurrent.CompletionException;
 
 import net.lax1dude.eaglercraft.IOUtils;

@@ -5,7 +5,7 @@ import com.google.common.collect.Maps;
 import com.mojang.authlib.GameProfile;
 import com.mojang.brigadier.CommandDispatcher;
 import io.netty.buffer.Unpooled;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 import net.lax1dude.eaglercraft.EaglercraftUUID;
 import net.lax1dude.eaglercraft.Random;
 import net.lax1dude.eaglercraft.internal.vfs2.VFile2;

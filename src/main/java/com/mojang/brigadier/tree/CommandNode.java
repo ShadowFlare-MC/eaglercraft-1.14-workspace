@@ -10,7 +10,7 @@ import com.mojang.brigadier.context.CommandContextBuilder;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.brigadier.suggestion.Suggestions;
 import com.mojang.brigadier.suggestion.SuggestionsBuilder;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 
 import java.util.*;
 import java.util.Map.Entry;

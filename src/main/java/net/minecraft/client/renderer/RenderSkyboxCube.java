@@ -1,7 +1,7 @@
 package net.minecraft.client.renderer;
 
 import com.mojang.blaze3d.platform.GlStateManager;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 import net.lax1dude.eaglercraft.vector.Matrix4f;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.texture.TextureManager;

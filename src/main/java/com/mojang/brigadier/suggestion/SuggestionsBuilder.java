@@ -2,7 +2,7 @@ package com.mojang.brigadier.suggestion;
 
 import com.mojang.brigadier.Message;
 import com.mojang.brigadier.context.StringRange;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 
 import java.util.ArrayList;
 import java.util.List;

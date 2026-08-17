@@ -5,7 +5,7 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 import net.lax1dude.eaglercraft.IOUtils;
 import net.minecraft.resources.IResource;
 import net.minecraft.resources.IResourceManager;

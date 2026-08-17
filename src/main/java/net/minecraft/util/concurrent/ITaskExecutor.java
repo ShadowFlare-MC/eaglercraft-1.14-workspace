@@ -1,6 +1,6 @@
 package net.minecraft.util.concurrent;
 
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 
 import java.util.function.Consumer;
 import java.util.function.Function;

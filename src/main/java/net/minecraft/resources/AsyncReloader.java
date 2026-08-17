@@ -1,7 +1,7 @@
 package net.minecraft.resources;
 
 import com.google.common.collect.Sets;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 import net.minecraft.profiler.EmptyProfiler;
 import net.minecraft.util.Unit;
 import net.minecraft.util.Util;

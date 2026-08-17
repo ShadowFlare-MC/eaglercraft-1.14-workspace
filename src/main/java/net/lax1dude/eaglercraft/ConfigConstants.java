@@ -5,10 +5,10 @@ import java.util.List;
 
 public class ConfigConstants {
 
-    public static final String version = "u0";
-    public static final String mainMenuString = "Eaglercraft " + version;
+    public static final String version = "u4";
+    public static final String mainMenuString = "Eaglercraft 1.14.4";
 
-    public static final String forkMe = "https://github.com/nigga";
+    public static final String forkMe = "https://github.com/shadowflare-mc";
 
     public static String ayonullTitle = null;
     public static String ayonullLink = null;

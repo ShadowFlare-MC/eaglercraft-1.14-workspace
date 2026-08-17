@@ -2,18 +2,6 @@
  Eaglercraft 1.14.4 / EaglercraftX Developers
  ~~~~~~~~~~~~~~~~~~~~~~~
 
- eymenwsmc:
-  - Ported 1.14 to browser
-  - Fixed bugs of 1.14
-  - Added misc features to 1.14
-  - Optimized 1.14
-
- cirsius:
-  - dozens of miscellaneous bug fixes
-
- arlenh7:
-  - small optimizations
-
  lax1dude:
   - Creator of Eaglercraft
   - Ported the Minecraft 1.8 src to TeaVM

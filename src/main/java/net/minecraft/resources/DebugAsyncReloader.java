@@ -1,6 +1,6 @@
 package net.minecraft.resources;
 import java.util.List;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;

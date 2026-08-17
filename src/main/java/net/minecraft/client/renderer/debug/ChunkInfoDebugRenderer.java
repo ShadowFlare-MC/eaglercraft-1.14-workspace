@@ -3,7 +3,7 @@ package net.minecraft.client.renderer.debug;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableMap.Builder;
 import com.mojang.blaze3d.platform.GlStateManager;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientChunkProvider;
 import net.minecraft.client.renderer.ActiveRenderInfo;

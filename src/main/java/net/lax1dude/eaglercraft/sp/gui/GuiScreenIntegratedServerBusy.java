@@ -6,7 +6,6 @@ import net.lax1dude.eaglercraft.sp.ipc.IPCPacket15Crashed;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screen.MainMenuScreen;
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.util.text.StringTextComponent;
 
@@ -30,7 +29,6 @@ public class GuiScreenIntegratedServerBusy extends Screen {
     public final Screen menu;
     public final String failMessage;
     private final it.unimi.dsi.fastutil.longs.Long2ObjectOpenHashMap<net.minecraft.world.chunk.ChunkStatus> dummyStatuses = new it.unimi.dsi.fastutil.longs.Long2ObjectOpenHashMap<>();
-    private Button killTask;
     private BooleanSupplier checkTaskComplete;
     private Runnable taskKill;
     private String lastStatus;
@@ -117,11 +115,6 @@ public class GuiScreenIntegratedServerBusy extends Screen {
     protected void init() {
         if (startStartTime == 0) this.startStartTime = EagRuntime.steadyTimeMillis();
         areYouSure = 0;
-        this.killTask = this.addButton(new Button(this.width / 2 - 100, this.height / 3 + 120 + 50, 200, 20,
-                net.minecraft.client.resources.I18n.format("singleplayer.busy.killTask"), b -> {
-            SingleplayerServerController.killWorker();
-        }));
-        killTask.active = false;
     }
 
     public boolean isPauseScreen() {
@@ -235,10 +228,6 @@ public class GuiScreenIntegratedServerBusy extends Screen {
     }
 
     public void tick() {
-        long millis = EagRuntime.steadyTimeMillis();
-        if (millis - startStartTime > 6000l && SingleplayerServerController.canKillWorker()) {
-            killTask.active = true;
-        }
         if (SingleplayerServerController.didLastCallFail() || !SingleplayerServerController.isIntegratedServerWorkerAlive()) {
             onException.accept(this, SingleplayerServerController.worldStatusErrors());
             return;

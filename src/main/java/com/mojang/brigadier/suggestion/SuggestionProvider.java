@@ -2,7 +2,7 @@ package com.mojang.brigadier.suggestion;
 
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 
 @FunctionalInterface
 public interface SuggestionProvider<S> {

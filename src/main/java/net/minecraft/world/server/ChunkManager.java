@@ -13,7 +13,7 @@ import it.unimi.dsi.fastutil.longs.Long2ObjectMap.Entry;
 import it.unimi.dsi.fastutil.longs.LongIterator;
 import it.unimi.dsi.fastutil.longs.LongOpenHashSet;
 import it.unimi.dsi.fastutil.longs.LongSet;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 import net.lax1dude.eaglercraft.internal.vfs2.VFile2;
 import net.minecraft.crash.CrashReport;
 import net.minecraft.crash.CrashReportCategory;

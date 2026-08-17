@@ -14,7 +14,7 @@
  *
  */
 
-package net.eymenwsmc;
+package net.deltaclient;
 
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;

@@ -4,7 +4,7 @@ import com.google.common.annotations.VisibleForTesting;
 import com.mojang.datafixers.DataFixer;
 import com.mojang.datafixers.util.Either;
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 import net.lax1dude.eaglercraft.internal.vfs2.VFile2;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityClassification;

@@ -18,7 +18,7 @@ package net.lax1dude.eaglercraft.internal.wasm_gc_teavm;
 
 import java.io.PrintStream;
 
-import net.eymenwsmc.RecipeLoaderWASM;
+import net.deltaclient.RecipeLoaderWASM;
 import net.lax1dude.eaglercraft.Filesystem;
 import net.lax1dude.eaglercraft.internal.IEaglerFilesystem;
 import net.lax1dude.eaglercraft.internal.vfs2.VFile2;

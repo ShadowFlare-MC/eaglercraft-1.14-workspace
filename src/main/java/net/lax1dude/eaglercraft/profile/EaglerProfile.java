@@ -18,23 +18,14 @@ public class EaglerProfile {
     public static final Random rand;
     public static final String[] defaultOptionsTextures = new String[]{
             "/skins/01.default_steve.png",
-            "/skins/02.tennis_steve.png",
-            "/skins/03.tuxedo_steve.png",
-            "/skins/04.athlete_steve.png",
-            "/skins/05.cyclist_steve.png",
-            "/skins/06.boxer_steve.png",
-            "/skins/07.prisoner_steve.png",
-            "/skins/08.scottish_steve.png",
-            "/skins/09.dev_steve.png",
-            "/skins/10.herobrine.png",
-            "/skins/11.slime.png",
-            "/skins/12.trump.png",
-            "/skins/13.notch.png",
-            "/skins/14.creeper.png",
-            "/skins/15.zombie.png",
-            "/skins/16.pig.png",
-            "/skins/17.squid.png",
-            "/skins/18.mooshroom.png"
+            "/skins/02.default_alex.png",
+            "/skins/03.Ari.png",
+            "/skins/04.Efe.png",
+            "/skins/05.Kai.png",
+            "/skins/06.Makena.png",
+            "/skins/07.Noor.png",
+            "/skins/08.Sunny.png",
+            "/skins/09.Zuri.png"
     };
     private static final Map<Integer, WaitingSkin> multiplayerWaitingSkinCache = new HashMap();
     private static final Map<String, CachedSkin> multiplayerSkinCache = new HashMap();
@@ -52,12 +43,12 @@ public class EaglerProfile {
 
     static {
         String[] usernameDefaultWords = new String[]{
-                "Yeeish",
-                "Yeeish",
-                "Yee",
-                "Yee",
-                "Yeer",
-                "Yeeler",
+                "Del",
+                "Delta",
+                "Flare",
+                "Shadow",
+                "Devv",
+                "Xeno",
                 "Eagler",
                 "Eagl",
                 "Darver",

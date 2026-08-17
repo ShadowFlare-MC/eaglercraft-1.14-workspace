@@ -3,13 +3,13 @@ package net.minecraft.client.gui.screen;
 import com.google.common.collect.Lists;
 import com.mojang.blaze3d.platform.GLX;
 import com.mojang.blaze3d.platform.GlStateManager;
-import net.eymenwsmc.CompletableFuture;
-import net.eymenwsmc.CreditsScreen;
-import net.eymenwsmc.Util;
-import net.eymenwsmc.gui.UpdateOverlay;
-import net.eymenwsmc.network.NetworkHandler;
-import net.eymenwsmc.socials.GuiSocialInfoScreen;
-import net.eymenwsmc.socials.GuiSocialLoginScreen;
+import net.deltaclient.CompletableFuture;
+import net.deltaclient.CreditsScreen;
+import net.deltaclient.Util;
+import net.deltaclient.gui.UpdateOverlay;
+import net.deltaclient.network.NetworkHandler;
+import net.deltaclient.socials.GuiSocialInfoScreen;
+import net.deltaclient.socials.GuiSocialLoginScreen;
 import net.lax1dude.eaglercraft.*;
 import net.lax1dude.eaglercraft.profile.GuiScreenEditProfile;
 import net.minecraft.client.Minecraft;
@@ -168,6 +168,7 @@ public class MainMenuScreen extends Screen {
             this.addSingleplayerMultiplayerButtons(j, 24);
         }
 
+        // 下段ボタン（既存レイアウトを維持）
         this.addButton(new ImageButton(this.width / 2 - 124, j + 72 + 12, 20, 20, 0, 106, 20, Button.WIDGETS_LOCATION, 256, 256, (p_213090_1_) -> {
             this.mc.displayGuiScreen(new LanguageScreen(this, this.mc.gameSettings, this.mc.getLanguageManager()));
         }, I18n.format("narrator.button.language")));
@@ -222,14 +223,25 @@ public class MainMenuScreen extends Screen {
     }
 
     private void addSingleplayerMultiplayerButtons(int yIn, int rowHeightIn) {
+        // 元の配置をそのまま維持（幅200・中央）
         this.addButton(new Button(this.width / 2 - 100, yIn, 200, 20, I18n.format("menu.singleplayer"), (p_213089_1_) -> {
             this.mc.displayGuiScreen(new WorldSelectionScreen(this));
         }));
         this.addButton(new Button(this.width / 2 - 100, yIn + rowHeightIn * 1, 200, 20, I18n.format("menu.multiplayer"), (p_213086_1_) -> {
             this.mc.displayGuiScreen(new MultiplayerScreen(this));
         }));
-        // Realms/Creditsボタンの動作を無効化
         this.addButton(new Button(this.width / 2 - 100, yIn + rowHeightIn * 2, 200, 20, I18n.format("Minecraft Realms"), (p_213095_1_) -> {
+            // 動作なし
+        }));
+
+        // 右側にさらに離して配置（Essential風）
+        this.addButton(new Button(this.width / 2 + 140, yIn, 98, 20, "Credits", (p_credits) -> {
+            this.forkOnGithub();
+        }));
+        this.addButton(new Button(this.width / 2 + 140, yIn + rowHeightIn * 1, 98, 20, "Relays", (p_relays) -> {
+            // 動作なし
+        }));
+        this.addButton(new Button(this.width / 2 + 140, yIn + rowHeightIn * 2, 98, 20, "Notification", (p_notif) -> {
             // 動作なし
         }));
     }
@@ -308,7 +320,7 @@ public class MainMenuScreen extends Screen {
                 GlStateManager.popMatrix();
             }
 
-            String s = "OptiFine 1.14.4 HD U G5";
+            String s = "DeltaClient 2.39";
             String s1 = "Minecraft 1.14.4";
             if (this.mc.isDemo()) {
                 s = s + " Demo";

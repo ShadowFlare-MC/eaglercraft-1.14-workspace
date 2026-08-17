@@ -5,4 +5,4 @@ client-origin-version=u52
 client-origin-vendor=lax1dude
 client-fork-name=Eaglercraft 1.14.4
 client-fork-version=u52
-client-fork-vendor=eymenwsmc
+client-fork-vendor=deltaclient

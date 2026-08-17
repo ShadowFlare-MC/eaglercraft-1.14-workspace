@@ -4,7 +4,7 @@ import com.google.common.collect.Iterators;
 import com.google.common.collect.Lists;
 import com.mojang.datafixers.Dynamic;
 import it.unimi.dsi.fastutil.Hash.Strategy;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 import net.lax1dude.eaglercraft.EaglercraftUUID;
 import net.lax1dude.eaglercraft.internal.vfs2.VFile2;
 import net.minecraft.state.IProperty;

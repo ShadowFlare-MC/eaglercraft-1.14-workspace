@@ -9,7 +9,7 @@ import com.mojang.blaze3d.platform.GlStateManager;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
-import net.eymenwsmc.network.NetworkHandler;import net.lax1dude.eaglercraft.Random;
+import net.deltaclient.network.NetworkHandler;import net.lax1dude.eaglercraft.Random;
 import java.util.stream.Collectors;
 
 import net.lax1dude.eaglercraft.HString;

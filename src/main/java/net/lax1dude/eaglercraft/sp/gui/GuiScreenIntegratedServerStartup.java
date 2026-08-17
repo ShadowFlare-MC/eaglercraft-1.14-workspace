@@ -8,7 +8,6 @@ import net.lax1dude.eaglercraft.sp.ipc.IPCPacket1CIssueDetected;
 import net.minecraft.client.gui.screen.MainMenuScreen;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.WorldSelectionScreen;
-import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.util.text.StringTextComponent;
 
@@ -18,8 +17,6 @@ public class GuiScreenIntegratedServerStartup extends Screen {
     private final Screen backScreen;
     private final boolean singleThread;
     private int counter = 0;
-
-    private Button cancelButton;
 
     public GuiScreenIntegratedServerStartup(Screen backScreen) {
         super(new StringTextComponent(""));
@@ -34,12 +31,6 @@ public class GuiScreenIntegratedServerStartup extends Screen {
     }
 
     protected void init() {
-        this.addButton(cancelButton = new Button(this.width / 2 - 100, this.height / 3 + 50, 200, 20,
-                I18n.format("singleplayer.busy.killTask"), b -> {
-            SingleplayerServerController.killWorker();
-            mc.displayGuiScreen(new GuiScreenIntegratedServerStartup(new MainMenuScreen(), true));
-        }));
-        cancelButton.visible = false;
     }
 
     public void tick() {
@@ -52,9 +43,6 @@ public class GuiScreenIntegratedServerStartup extends Screen {
                 return;
             }
         } else if (counter > 2) {
-            if (counter > 100 && SingleplayerServerController.canKillWorker() && !singleThread) {
-                cancelButton.visible = true;
-            }
             IPCPacket15Crashed[] crashReport = SingleplayerServerController.worldStatusErrors();
             if (crashReport != null) {
                 mc.displayGuiScreen(GuiScreenIntegratedServerBusy.createException(new MainMenuScreen(), "singleplayer.failed.notStarted", crashReport));

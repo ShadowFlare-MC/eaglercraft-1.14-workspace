@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
 
-import net.eymenwsmc.Util;
+import net.deltaclient.Util;
 import net.minecraft.client.gui.fonts.providers.UnicodeTextureGlyphProvider;
 import net.minecraft.resources.IResource;
 import net.minecraft.resources.IResourceManager;

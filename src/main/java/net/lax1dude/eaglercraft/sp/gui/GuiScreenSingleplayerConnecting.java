@@ -8,7 +8,6 @@ import net.lax1dude.eaglercraft.sp.SingleplayerServerController;
 import net.lax1dude.eaglercraft.sp.socket.NetHandlerSingleplayerLogin;
 import net.minecraft.client.gui.screen.DisconnectedScreen;
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.network.ProtocolType;
@@ -20,7 +19,6 @@ public class GuiScreenSingleplayerConnecting extends Screen {
 
     private Screen menu;
     private String message;
-    private Button killTask;
     private SingleplayerNetworkManager networkManager = null;
     private int timer = 0;
 
@@ -35,13 +33,6 @@ public class GuiScreenSingleplayerConnecting extends Screen {
 
     protected void init() {
         if (startStartTime == 0) this.startStartTime = EagRuntime.steadyTimeMillis();
-        this.killTask = this.addButton(new Button(this.width / 2 - 100, this.height / 3 + 50, 200, 20,
-                I18n.format("singleplayer.busy.killTask"), b -> {
-            SingleplayerServerController.killWorker();
-            this.mc.loadWorld((ClientWorld) null);
-            this.mc.displayGuiScreen(menu);
-        }));
-        killTask.active = false;
     }
 
     public void render(int par1, int par2, float par3) {
@@ -96,11 +87,6 @@ public class GuiScreenSingleplayerConnecting extends Screen {
                     }
                 }
             }
-        }
-
-        long millis = EagRuntime.steadyTimeMillis();
-        if (millis - startStartTime > 6000l && SingleplayerServerController.canKillWorker()) {
-            killTask.active = true;
         }
     }
 

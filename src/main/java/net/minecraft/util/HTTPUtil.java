@@ -14,7 +14,7 @@ import java.net.URL;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Map.Entry;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 import java.util.concurrent.Executors;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraftforge.api.distmarker.Dist;

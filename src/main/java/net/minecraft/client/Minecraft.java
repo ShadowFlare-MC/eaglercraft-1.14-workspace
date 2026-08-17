@@ -9,8 +9,9 @@ import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
 import com.mojang.blaze3d.platform.GLX;
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.datafixers.DataFixer;
-import net.eymenwsmc.CompletableFuture;
-import net.eymenwsmc.gui.NoticeScreen;import net.eymenwsmc.network.NetworkHandler;
+import net.deltaclient.CompletableFuture;
+import net.deltaclient.gui.NoticeScreen;
+import net.deltaclient.network.NetworkHandler;
 import net.lax1dude.eaglercraft.EagRuntime;
 import net.lax1dude.eaglercraft.EagUtils;
 import net.lax1dude.eaglercraft.EaglercraftUUID;
@@ -429,8 +430,7 @@ public class Minecraft extends RecursiveEventLoop<Runnable> implements ISnooperI
         this.worldRenderer = new WorldRenderer(this);
         this.resourceManager.addReloadListener(this.worldRenderer);
         this.populateSearchTreeManager();
-        this.currentScreen = new GuiScreenEditProfile(new NoticeScreen("This is the first version of the port. If you think that chunks are loading slow. Please check Performance Settings and increase Chunk Updates (not recommended). Stairs are buggy due a vanilla 1.14 bug. And because I ported sodium, lightning is a bit weird,It's not a bug! Please keep your game updated for better experience!",new MainMenuScreen()));
-        this.resourceManager.addReloadListener(this.searchTreeManager);
+        this.currentScreen = new MainMenuScreen();
         GlStateManager.viewport(0, 0, this.mainWindow.getFramebufferWidth(), this.mainWindow.getFramebufferHeight());
         this.particles = new ParticleManager(this.world, this.textureManager);
         this.resourceManager.addReloadListener(this.particles);
@@ -455,10 +455,11 @@ public class Minecraft extends RecursiveEventLoop<Runnable> implements ISnooperI
         this.mainWindow.func_224798_d(this.gameSettings.field_225307_E);
         this.mainWindow.setLogOnGlError();
 
+        // 変更後
         if (this.serverName != null) {
             this.displayGuiScreen(new ConnectingScreen(new MainMenuScreen(), this, this.serverName, this.serverPort));
         } else {
-            this.displayGuiScreen( this.gameSettings.hasReadIt ? new GuiScreenEditProfile(new MainMenuScreen()) : new GuiScreenEditProfile(new NoticeScreen("This is the first version of the port. If you think that chunks are loading slow. Please check Performance Settings and increase Chunk Updates (not recommended). Stairs are buggy due a vanilla 1.14 bug. And because I ported sodium, lightning is a bit weird,It's not a bug! Please keep your game updated for better experience!",new MainMenuScreen())));
+            this.displayGuiScreen(new MainMenuScreen());
         }
 
         ResourceLoadProgressGui.loadLogoTexture(this);

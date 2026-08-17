@@ -8,7 +8,7 @@ import com.mojang.brigadier.exceptions.SimpleCommandExceptionType;
 import com.mojang.brigadier.suggestion.Suggestions;
 import com.mojang.brigadier.suggestion.SuggestionsBuilder;
 import java.util.Collection;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 import java.util.function.BinaryOperator;
 import java.util.stream.Stream;
 import net.minecraft.command.arguments.EntityAnchorArgument;

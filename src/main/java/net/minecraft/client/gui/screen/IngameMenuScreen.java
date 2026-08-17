@@ -1,8 +1,8 @@
 package net.minecraft.client.gui.screen;
 
 import com.mojang.blaze3d.platform.GlStateManager;
-import net.eymenwsmc.friends.FriendsOverlayScreen;
-import net.eymenwsmc.network.NetworkHandler;
+import net.deltaclient.friends.FriendsOverlayScreen;
+import net.deltaclient.network.NetworkHandler;
 import net.lax1dude.eaglercraft.EagRuntime;
 import net.lax1dude.eaglercraft.PauseMenuCustomizeState;
 import org.lwjgl.input.Mouse;

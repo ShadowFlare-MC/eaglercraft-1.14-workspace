@@ -1,7 +1,7 @@
 package net.minecraft.client.renderer.tileentity;
 
 import com.mojang.blaze3d.platform.GlStateManager;
-import net.eymenwsmc.Util;
+import net.deltaclient.Util;
 import net.minecraft.block.BannerBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.WallBannerBlock;

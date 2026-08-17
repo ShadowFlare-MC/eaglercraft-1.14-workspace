@@ -2,7 +2,7 @@ package net.minecraft.tags;
 
 import com.mojang.datafixers.util.Pair;
 import java.util.Map;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 import java.util.concurrent.Executor;
 import net.minecraft.block.Block;
 import net.minecraft.entity.EntityType;

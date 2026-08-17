@@ -5,7 +5,7 @@ import com.mojang.datafixers.util.Either;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 import java.util.function.IntConsumer;
 import java.util.function.IntSupplier;
 import java.util.stream.Stream;

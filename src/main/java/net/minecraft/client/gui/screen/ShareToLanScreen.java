@@ -1,6 +1,6 @@
 package net.minecraft.client.gui.screen;
 
-import net.eymenwsmc.network.NetworkHandler;
+import net.deltaclient.network.NetworkHandler;
 import net.lax1dude.eaglercraft.internal.PlatformWebRTC;
 import net.lax1dude.eaglercraft.sp.gui.GuiNetworkSettingsButton;
 import net.lax1dude.eaglercraft.sp.lan.LANServerController;

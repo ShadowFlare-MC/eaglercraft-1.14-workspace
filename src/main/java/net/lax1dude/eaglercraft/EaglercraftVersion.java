@@ -8,14 +8,14 @@ public class EaglercraftVersion {
 
     public static final String projectForkName = "Minecraft 1.14.4";
     public static final String projectForkVersion = "u0";
-    public static final String projectForkVendor = "ShadowFlare Teams";
+    public static final String projectForkVendor = "deltaclient Teams";
 
     public static final String projectForkURL = "";
 
     /// ///////////////////////////////////////////////////////////////////
 
     public static final String projectOriginName = "Minecraft 1.14.4";
-    public static final String projectOriginAuthor = "ShadowFlare Teams";
+    public static final String projectOriginAuthor = "deltaclient Teams";
     public static final String projectOriginVersion = "u0";
     public static final String projectOriginServerVersion = "";
 

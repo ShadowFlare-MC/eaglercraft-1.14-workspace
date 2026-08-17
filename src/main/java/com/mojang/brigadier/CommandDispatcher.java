@@ -10,7 +10,7 @@ import com.mojang.brigadier.suggestion.SuggestionsBuilder;
 import com.mojang.brigadier.tree.CommandNode;
 import com.mojang.brigadier.tree.LiteralCommandNode;
 import com.mojang.brigadier.tree.RootCommandNode;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 
 import java.util.*;
 import java.util.function.Predicate;

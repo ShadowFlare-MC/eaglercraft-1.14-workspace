@@ -1,6 +1,6 @@
 package net.lax1dude.eaglercraft.profile;
 
-import net.eymenwsmc.network.NetworkHandler;import net.lax1dude.eaglercraft.EagRuntime;
+import net.deltaclient.network.NetworkHandler;import net.lax1dude.eaglercraft.EagRuntime;
 import net.lax1dude.eaglercraft.Mouse;
 import net.lax1dude.eaglercraft.internal.FileChooserResult;
 import net.lax1dude.eaglercraft.opengl.GlStateManager;

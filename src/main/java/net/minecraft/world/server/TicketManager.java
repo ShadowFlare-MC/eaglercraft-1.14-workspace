@@ -21,7 +21,7 @@ import it.unimi.dsi.fastutil.objects.ObjectOpenHashSet;
 import it.unimi.dsi.fastutil.objects.ObjectSet;
 import it.unimi.dsi.fastutil.objects.ObjectSortedSet;
 import java.util.Set;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 import java.util.concurrent.Executor;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.util.concurrent.ITaskExecutor;

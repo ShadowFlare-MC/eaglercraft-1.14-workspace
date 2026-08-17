@@ -8,7 +8,7 @@ import java.io.Closeable;
 import java.io.IOException;
 import java.util.*;
 
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 import java.util.stream.Collectors;
 
 import net.lax1dude.eaglercraft.IOUtils;

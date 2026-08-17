@@ -1,7 +1,7 @@
 package net.minecraft.client.particle;
 
 import com.mojang.blaze3d.platform.GlStateManager;
-import net.eymenwsmc.Util;
+import net.deltaclient.Util;
 import net.minecraft.client.renderer.BufferBuilder;
 import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.client.renderer.Tessellator;

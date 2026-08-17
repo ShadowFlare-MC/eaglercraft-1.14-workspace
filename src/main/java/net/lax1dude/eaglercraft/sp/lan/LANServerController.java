@@ -25,7 +25,7 @@ import java.util.function.Consumer;
 
 import net.lax1dude.eaglercraft.EagRuntime;
 import net.lax1dude.eaglercraft.EagUtils;
-import net.eymenwsmc.network.NetworkHandler;
+import net.deltaclient.network.NetworkHandler;
 import net.lax1dude.eaglercraft.internal.PlatformWebRTC;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

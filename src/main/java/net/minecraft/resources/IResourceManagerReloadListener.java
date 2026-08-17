@@ -1,6 +1,6 @@
 package net.minecraft.resources;
 
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 import java.util.concurrent.Executor;
 import net.minecraft.profiler.IProfiler;
 import net.minecraft.util.Unit;

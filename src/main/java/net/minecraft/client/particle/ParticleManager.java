@@ -19,7 +19,7 @@ import java.util.Map;
 import java.util.Queue;
 import net.lax1dude.eaglercraft.Random;
 import java.util.Set;
-import net.eymenwsmc.CompletableFuture;
+import net.deltaclient.CompletableFuture;
 import java.util.concurrent.Executor;
 import java.util.stream.Collectors;
 import net.minecraft.block.BlockRenderType;
